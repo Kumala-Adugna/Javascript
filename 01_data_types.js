@@ -1,3 +1,5 @@
+// 1. PRACTICING DATATYPES
+
 // 1. Declare two variables
 let age = "21"; 
 let yearsToAdd = 5; 
