@@ -16,14 +16,14 @@ let statusElement = document.getElementById("Status1");
 
 
 
-// // ------------------------------------------
-// // EXPERIMENT 4.1: THE GROCERY LIST MODIFIER
-// // ------------------------------------------
+// ------------------------------------------
+// EXPERIMENT 4.1: THE GROCERY LIST MODIFIER
+// ------------------------------------------
 
-// let groceries = ["Milk", "Eggs", "Bread"];
-// groceries.shift(); // Removes "Milk" automatically
-// groceries.push("Bananas");
-// headingElement.innerHTML = `The final array is: ${groceries.join(" | ")}`;
+let groceries = ["Milk", "Eggs", "Bread"];
+groceries.shift(); // Removes "Milk" automatically
+groceries.push("Bananas");
+headingElement.innerHTML = `The final array is: ${groceries.join(" | ")}`;
 
 
 
@@ -32,15 +32,18 @@ let statusElement = document.getElementById("Status1");
 // EXPERIMENT 4.2: THE SKILL CHECKER
 // ------------------------------------------
 
-let mySkills =["HTML", "CSS", "Java"];
+let mySkills = ["HTML", "CSS", "Java"];
 let check = mySkills.includes("TypeScript");
 
-if(check == true){
-    statusElement.innerHTML = "Ready for modern web dev!";
-    statusElement.style.color = "green"
-}
-else{
-    statusElement.innerHTML = "Time to learn TypeScript!";
-    statusElement.style.color = "orange"
+if (check === true) {
+    headingElement.innerHTML = "Skill Check Profile"; // Changes top line
+    headingElement.style.color = "black";
+    statusElement.innerHTML = "Ready for modern web dev!"; // Changes bottom line
+    statusElement.style.color = "green";
+} else {
+    headingElement.innerHTML = "Skill Check Profile"; // Changes top line
+    headingElement.style.color = "black";
+    statusElement.innerHTML = "Time to learn TypeScript!"; // Changes bottom line
+    statusElement.style.color = "orange";
 }
 
