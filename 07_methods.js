@@ -99,16 +99,6 @@ let statusElement = document.getElementById("Status1");
 // ------------------------------------------
 // EXPERIMENT 7.4: THE DYNAMIC INVOICE CALCULATOR
 // ------------------------------------------
-// YOUR TASK:
-// 1. Create an object named "invoice" with these properties:
-//    - items: [10, 25, 15] (An array representing prices)
-//    - calculateTotal: A method function that takes no parameters.
-// 2. Inside the "calculateTotal" method:
-//    - Create a local tracking variable let runningSum = 0;
-//    - Run a for loop through this.items to sum the prices up into runningSum.
-//    - Return the final runningSum value out of the method.
-// 3. Outside the object, invoke invoice.calculateTotal() and set statusElement.innerHTML to:
-//    "Invoice Balance Due: $50" (Since 10 + 25 + 15 = 50).
 
 let invoice = {
     items: [10,25,15],
